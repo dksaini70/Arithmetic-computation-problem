@@ -13,3 +13,5 @@ add1=$(($a*$b+$c))
 echo $add1
 add2=$(($c+$a/$b))
 echo $add2
+add3=$(($a%$b+$c))
+echo $add3
