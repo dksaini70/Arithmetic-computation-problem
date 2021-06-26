@@ -5,5 +5,5 @@ read a
 read b
 read c
 echo $a" "$b" "$c
-add=$(($a+$b*$c))
+add=$(($a*$b+$c))
 echo $add
