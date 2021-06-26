@@ -1,4 +1,4 @@
-#!/bin/bash -x
+#!/bin/bash 
 echo "arithmetic problem"
 echo "Enter the three number for arithmetic operation"
 add1=$(($a*$b+$c))
@@ -8,17 +8,21 @@ read b
 read c
 echo $a" "$b" "$c
 add=$(($a+$b*$c))
-echo $add
+echo "compute1 "$add
 add1=$(($a*$b+$c))
-echo $add1
+echo "compute2 "$add1
 add2=$(($c+$a/$b))
-echo $add2
+echo "compute3 "$add2
 add3=$(($a%$b+$c))
-echo $add3
+echo "compute4 "$add3
 declare -A store
-declare -A array
-store[add]="$add"
-store[add1]="$add1"
-store[add2]="$add2"
-store[add3]="$add3"
+store[0]=$add
+store[1]=$add1
+store[2]=$add2
+store[3]=$add3
+
+for ((i=0;i<=3;i++))
+do
+echo ${store[$i]}
+done
 
