@@ -15,3 +15,10 @@ add2=$(($c+$a/$b))
 echo $add2
 add3=$(($a%$b+$c))
 echo $add3
+declare -A store
+declare -A array
+store[add]="$add"
+store[add1]="$add1"
+store[add2]="$add2"
+store[add3]="$add3"
+
