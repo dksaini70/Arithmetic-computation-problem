@@ -24,3 +24,6 @@ echo ${store[$i]}
 done
 echo "sorting of array in ascending order"
 echo $(printf '%s\n' "${store[@]}" | sort -n   )
+
+echo "sorting of array in descending order"
+echo $(printf '%s\n' "${store[@]}" | sort -nr   )
