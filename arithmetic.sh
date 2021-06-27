@@ -22,5 +22,5 @@ for ((i=0;i<4;i++))
 do 
 echo ${store[$i]}
 done
-echo "sorting of array in descending order"
-echo $(printf '%s\n' "${store[@]}" | sort -nr   )
+echo "sorting of array in ascending order"
+echo $(printf '%s\n' "${store[@]}" | sort -n   )
