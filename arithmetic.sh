@@ -1,8 +1,6 @@
-#!/bin/bash 
+#!/bin/bash -x
 echo "arithmetic problem"
 echo "Enter the three number for arithmetic operation"
-add1=$(($a*$b+$c))
-echo $add1
 read a
 read b
 read c
@@ -20,9 +18,9 @@ store[0]=$add
 store[1]=$add1
 store[2]=$add2
 store[3]=$add3
-
-for ((i=0;i<=3;i++))
-do
+for ((i=0;i<4;i++))
+do 
 echo ${store[$i]}
 done
-
+echo "sorting of array in descending order"
+echo $(printf '%s\n' "${store[@]}" | sort -nr   )
